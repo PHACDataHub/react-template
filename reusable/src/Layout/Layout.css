@@ -1,0 +1,9 @@
+a {
+    color: blue; /* Normal and visited link color */
+    text-decoration: underline; /* Underline for all links */
+}
+
+a:hover {
+    color: blue; /* Color when hovering over links */
+    text-decoration: underline; /* Underline on hover */    
+}

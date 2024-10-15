@@ -1,13 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react"
+import ReactDOM from "react-dom/client" // Correct import
+import { BrowserRouter } from "react-router-dom"
+import App from "./App.jsx"
+import  "./i18n.js"
+import { I18nextProvider } from "react-i18next"
+import "./index.css"
+import "@cdssnc/gcds-components-react/gcds.css"
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const root = ReactDOM.createRoot(document.getElementById("react-root"));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <I18nextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </I18nextProvider>
   </React.StrictMode>
 );
 
