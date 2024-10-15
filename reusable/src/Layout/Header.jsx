@@ -5,9 +5,9 @@ function Header() {
 
     const { i18n } = useTranslation()
 
-	const changeLanguage = lng => {
-		i18n.changeLanguage(lng)
-	}
+    const changeLanguage = lng => {
+        i18n.changeLanguage(lng)
+    }
 
     return (
         <div className="Header">
@@ -19,13 +19,13 @@ function Header() {
             >
                 <div slot="toggle">
                     {i18n.language === "en" ? (
-                        <button className="astext" onClick={() => changeLanguage("fr")}>
+                        <a href="#" onClick={(e) => { e.preventDefault(); changeLanguage("fr"); }}>
                             French
-                        </button>
+                        </a>
                     ) : (
-                        <button className="astext" onClick={() => changeLanguage("en")}>
+                        <a href="#" onClick={() => changeLanguage("en")}>
                             English
-                        </button>
+                        </a>
                     )}
                 </div>
             </GcdsHeader>
