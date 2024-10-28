@@ -1,5 +1,6 @@
 import { GcdsHeader } from "@cdssnc/gcds-components-react"
 import { useTranslation } from "react-i18next"
+import Navigation from '../Components/Navigation'
 
 function Header() {
 
@@ -29,6 +30,7 @@ function Header() {
                     )}
                 </div>
             </GcdsHeader>
+            <Navigation />
         </div>
     );
 }
