@@ -9,6 +9,7 @@ import "@cdssnc/gcds-components-react/gcds.css";
 import reportWebVitals from './reportWebVitals';
 import Layout from './Layout/Layout.jsx';
 import Sample from './Pages/Sample/Sample.jsx';
+import Home from './Pages/Home/Home.jsx';
 
 // Create the router
 const router = createBrowserRouter([
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       children: [
           {
               index: true, // This sets it as the default child route
-              element: <Sample />, // Home route rendering Sample
+              element: <Home />, // Home route rendering Sample
           },
           {
               path: 'sample', // Nested route without leading slash
