@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; // Use RouterProvider
-import App from "./App.jsx";
 import "./i18n.js"; // Internationalization
 import { I18nextProvider } from "react-i18next"; // If you're using i18next
 import "./index.css";

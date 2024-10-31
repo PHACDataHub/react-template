@@ -1,6 +1,6 @@
 import { GcdsHeader } from "@cdssnc/gcds-components-react"
 import { useTranslation } from "react-i18next"
-import Navigation from '../Components/Navigation'
+import Navigation from './Navigation/Navigation.jsx'
 
 function Header() {
 
