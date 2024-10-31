@@ -1,28 +1,37 @@
 nav{
-    background-color: #f1f2f3;
     margin-top:-60px;
     padding: 10px 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Distribute space between child elements */
+
 }
 
+.navbg{
+    background-color: #f1f2f3;
+
+}
 ul{
     display: grid;
-    grid-template-columns: 0fr 8fr;
+    grid-template-columns: 0fr 0fr;
     justify-content: end;
-    justify-self: end;
 }
 
 li{
-    padding-right: 20px;
     list-style-type: none;
     border-bottom-style:none;
 }
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: #26374a;
+    padding: 10px 15px;
+    border-radius: 5px;
+
 }
 
 nav a:hover{
     text-decoration: none;
-    color: black;
+    color: #26374a;
+    background-color: rgb(182, 182, 182);
 }
