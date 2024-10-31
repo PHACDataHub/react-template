@@ -20,6 +20,7 @@ ul{
 li{
     list-style-type: none;
     border-bottom-style:none;
+    padding-right: 10px;;
 }
 
 nav a{
@@ -34,4 +35,9 @@ nav a:hover{
     text-decoration: none;
     color: #26374a;
     background-color: rgb(182, 182, 182);
+}
+
+.active{
+    background-color: #26374a;
+    color:white
 }
