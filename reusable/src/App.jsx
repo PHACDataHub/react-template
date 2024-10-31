@@ -1,18 +1,17 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
-import Sample from './Pages/Sample Page/Sample';
+import Sample from './Pages/Sample/Sample';
+import Home from './Pages/Home/Home.jsx';
 
 function App() {
   return (
-    <Layout>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Sample />} />
-          <Route path="Sample" element={<Sample />} />
-        </Route>
-      </Routes>
-    </Layout>
+    <Routes>
+      <Route path="/" element={<Layout />}> {/* Layout wraps routes */}
+        <Route index element={<Home />} /> {/* Home route */}
+        <Route path="sample" element={<Sample />} /> {/* Sample route */}
+      </Route>
+    </Routes>
   );
 }
 

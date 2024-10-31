@@ -1,5 +1,6 @@
 import { GcdsHeader } from "@cdssnc/gcds-components-react"
 import { useTranslation } from "react-i18next"
+import Navigation from './Navigation/Navigation.jsx'
 
 function Header() {
 
@@ -19,16 +20,17 @@ function Header() {
             >
                 <div slot="toggle">
                     {i18n.language === "en" ? (
-                        <a href="#" onClick={(e) => { e.preventDefault(); changeLanguage("fr"); }}>
+                        <a href="#" style={{textDecoration: 'none'}} onClick={(e) => { e.preventDefault(); changeLanguage("fr"); }}>
                             French
                         </a>
                     ) : (
-                        <a href="#" onClick={() => changeLanguage("en")}>
+                        <a href="#" style={{textDecoration: 'none'}} onClick={() => changeLanguage("en")}>
                             English
                         </a>
                     )}
                 </div>
             </GcdsHeader>
+            <Navigation />
         </div>
     );
 }

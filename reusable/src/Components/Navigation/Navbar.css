@@ -1,0 +1,28 @@
+nav{
+    background-color: #f1f2f3;
+    margin-top:-60px;
+    padding: 10px 25px;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 0fr 8fr;
+    justify-content: end;
+    justify-self: end;
+}
+
+li{
+    padding-right: 20px;
+    list-style-type: none;
+    border-bottom-style:none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: black;
+}
